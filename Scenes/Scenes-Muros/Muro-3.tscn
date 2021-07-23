@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Sprites/drop_tile.png" type="Texture" id=2]
+
+[node name="Muro-3" type="Node2D"]
+
+[node name="Sprite2" type="Sprite" parent="."]
+position = Vector2( 6.73479, -19.4707 )
+scale = Vector2( 1.04154, 0.93253 )
+texture = ExtResource( 2 )

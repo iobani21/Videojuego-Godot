@@ -1,0 +1,110 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Fuente2.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Scripts/Menu.gd" type="Script" id=2]
+[ext_resource path="res://Scenes/Fondo-Menu.tscn" type="PackedScene" id=3]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends VBoxContainer
+
+
+# Declare member variables here. Examples:
+# var a = 2
+# var b = \"text\"
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+#func _process(delta):
+#	pass
+
+
+func _on_Nivel1_pressed():
+	pass # Replace with function body.
+"
+
+[node name="Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 12.6217
+margin_top = 25.0
+margin_right = -2.3783
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_left = 246.0
+margin_top = 226.0
+margin_right = 1120.0
+margin_bottom = 643.0
+script = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Nivel1" type="Button" parent="VBoxContainer"]
+margin_right = 874.0
+margin_bottom = 79.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.917647, 0.886275, 0.133333, 1 )
+custom_colors/font_color_hover = Color( 0.941176, 0.847059, 0.0470588, 1 )
+custom_colors/font_color_pressed = Color( 0.87451, 0.764706, 0.0156863, 1 )
+text = "Nivel-1"
+flat = true
+
+[node name="Nivel2" type="Button" parent="VBoxContainer"]
+margin_top = 83.0
+margin_right = 874.0
+margin_bottom = 162.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.917647, 0.886275, 0.133333, 1 )
+custom_colors/font_color_hover = Color( 0.917647, 0.886275, 0.133333, 1 )
+custom_colors/font_color_pressed = Color( 0.917647, 0.886275, 0.133333, 1 )
+text = "Nivel2"
+flat = true
+
+[node name="Nivel3" type="Button" parent="VBoxContainer"]
+margin_top = 166.0
+margin_right = 874.0
+margin_bottom = 245.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.917647, 0.886275, 0.133333, 1 )
+custom_colors/font_color_hover = Color( 0.917647, 0.886275, 0.133333, 1 )
+custom_colors/font_color_pressed = Color( 0.917647, 0.886275, 0.133333, 1 )
+text = "Nivel3"
+flat = true
+
+[node name="Nivel4" type="Button" parent="VBoxContainer"]
+margin_top = 249.0
+margin_right = 874.0
+margin_bottom = 328.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.917647, 0.886275, 0.133333, 1 )
+custom_colors/font_color_hover = Color( 0.917647, 0.886275, 0.133333, 1 )
+custom_colors/font_color_pressed = Color( 0.917647, 0.886275, 0.133333, 1 )
+text = "Nivel4"
+flat = true
+
+[node name="Salir" type="Button" parent="VBoxContainer"]
+margin_top = 332.0
+margin_right = 874.0
+margin_bottom = 411.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.921569, 1, 0.00784314, 1 )
+custom_colors/font_color_hover = Color( 0.917647, 0.886275, 0.133333, 1 )
+custom_colors/font_color_pressed = Color( 0.917647, 0.886275, 0.133333, 1 )
+text = "Salir"
+flat = true
+
+[node name="ParallaxBackground" parent="." instance=ExtResource( 3 )]
+
+[connection signal="pressed" from="VBoxContainer/Nivel1" to="." method="_on_Nivel1_pressed"]
+[connection signal="pressed" from="VBoxContainer/Nivel2" to="." method="_on_Nivel2_pressed"]
+[connection signal="pressed" from="VBoxContainer/Nivel3" to="." method="_on_Nivel3_pressed"]
+[connection signal="pressed" from="VBoxContainer/Nivel4" to="." method="_on_Nivel4_pressed"]

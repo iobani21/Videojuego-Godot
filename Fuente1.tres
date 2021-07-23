@@ -1,0 +1,9 @@
+[gd_resource type="DynamicFont" load_steps=2 format=2]
+
+[ext_resource path="res://Fuente/RINGM___.TTF" type="DynamicFontData" id=1]
+
+[resource]
+resource_name = "Fuente"
+size = 120
+outline_color = Color( 0.917647, 0.886275, 0.133333, 1 )
+font_data = ExtResource( 1 )

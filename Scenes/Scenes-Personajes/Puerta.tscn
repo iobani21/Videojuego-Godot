@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/Puerta.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/Puerta.png" type="Texture" id=2]
+
+[node name="Puerta" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( -3.36014, -13.0459 )
+scale = Vector2( 2.82663, 2.61892 )
+texture = ExtResource( 2 )

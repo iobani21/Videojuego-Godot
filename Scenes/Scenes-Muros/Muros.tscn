@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Sprites/telarana (2).png" type="Texture" id=1]
+[ext_resource path="res://Sprites/pisocueva.png" type="Texture" id=2]
+
+[node name="Muros" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+position = Vector2( 3.75696, -0.324287 )
+scale = Vector2( 0.873151, 0.726482 )
+texture = ExtResource( 1 )
